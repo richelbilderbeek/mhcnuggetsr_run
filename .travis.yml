@@ -10,6 +10,8 @@ r_github_packages:
   - richelbilderbeek/mhcnuggetsr
 
 before_script:
+  - sudo apt install python3-pip
+  - sudo pip install --upgrade pip
   - Rscript -e "mhcnuggetsr::install_mhcnuggets()"
 
 script:
