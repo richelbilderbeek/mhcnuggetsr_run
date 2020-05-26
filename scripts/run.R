@@ -1,4 +1,4 @@
-library(mhcnuggets)
+library(mhcnuggetsr)
 library(testthat)
 library(knitr)
 
