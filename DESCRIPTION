@@ -16,7 +16,7 @@ VignetteBuilder: knitr
 URL: https://github.com/richelbilderbeek/mhcnuggetsr
 BugReports: https://github.com/richelbilderbeek/mhcnuggetsr/issues
 Imports:
-    mhcnuggetsr (>= 0.2)
+    mhcnuggetsr (>= 0.3)
 Language: en-US
 Encoding: UTF-8
 
