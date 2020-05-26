@@ -1,0 +1,17 @@
+language: r
+dist: bionic
+cache: packages
+
+r_packages:
+  - knitr
+  - testthat
+
+r_github_packages:
+  - richelbilderbeek/mhcnuggetsr
+
+before_script:
+  - Rscript -e "mhcnuggetsr::install_mhcnuggets()"
+
+script:
+  - travis_wait 120 Rscript scripts/run.R
+
