@@ -15,6 +15,8 @@ RoxygenNote: 7.0.2
 VignetteBuilder: knitr
 URL: https://github.com/richelbilderbeek/mhcnuggetsr
 BugReports: https://github.com/richelbilderbeek/mhcnuggetsr/issues
+Imports:
+    mhcnuggetsr (>0.2)
 Language: en-US
 Encoding: UTF-8
 
