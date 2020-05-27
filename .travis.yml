@@ -14,6 +14,6 @@ before_script:
   - sudo pip install --upgrade pip
   - Rscript -e "mhcnuggetsr::install_mhcnuggets()"
 
-script:
+after_script:
   - travis_wait 120 Rscript scripts/run.R
 
