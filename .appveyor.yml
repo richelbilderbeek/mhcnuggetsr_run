@@ -21,11 +21,17 @@ environment:
     WARNINGS_ARE_ERRORS: 0
     USE_RTOOLS: true
 
+  matrix:
+    - INSTALL_MHCNUGGETS: true
+    - INSTALL_MHCNUGGETS: false
+
+
 build_script:
   - travis-tool.sh install_github richelbilderbeek/mhcnuggetsr
   - travis-tool.sh install_deps
   - Rscript -e "mhcnuggetsr::mhcnuggetsr_report()"
-  - Rscript -e "mhcnuggetsr::install_mhcnuggets()"
+  - if [[ "$INSTALL_MHCNUGGETS" == true ]]; then ./scripts/install_mhcnuggets.sh; fi
+  #- Rscript -e "mhcnuggetsr::install_mhcnuggets()"
   - Rscript -e "mhcnuggetsr::mhcnuggetsr_report()"
 
 test_script:
