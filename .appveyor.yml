@@ -24,7 +24,9 @@ environment:
 build_script:
   - travis-tool.sh install_github richelbilderbeek/mhcnuggetsr
   - travis-tool.sh install_deps
+  - Rscript -e "mhcnuggetsr::mhcnuggetsr_report()"
   - Rscript -e "mhcnuggetsr::install_mhcnuggets()"
+  - Rscript -e "mhcnuggetsr::mhcnuggetsr_report()"
 
 test_script:
   - travis-tool.sh run_tests
