@@ -17,7 +17,7 @@ URL: https://github.com/richelbilderbeek/mhcnuggetsr
 BugReports: https://github.com/richelbilderbeek/mhcnuggetsr/issues
 Imports:
     knitr,
-    mhcnuggetsr (>= 0.11),
+    mhcnuggetsr (>= 1.1),
     testthat
 Language: en-US
 Encoding: UTF-8
