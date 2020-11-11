@@ -7,7 +7,6 @@ r_packages:
   - testthat
 
 r_github_packages:
-  - richelbilderbeek/mhcnuggetsr
 
 before_script:
   - sudo apt install python3-pip
