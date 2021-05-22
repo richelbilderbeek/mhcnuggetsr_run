@@ -10,7 +10,6 @@ Description:
     The 'mhcnuggetsr' allows one to call MHCnuggets from R.
     This repository allows one to use 'mhcnuggetsr' on Travis CI.
 License: GPL-3
-LazyData: true
 RoxygenNote: 7.0.2
 VignetteBuilder: knitr
 URL: https://github.com/richelbilderbeek/mhcnuggetsr
